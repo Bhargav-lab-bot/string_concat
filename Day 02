@@ -1,0 +1,108 @@
+Problem 01 :-
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    
+    if(a > b && a > c){
+        cout<<a<<endl;
+    }
+    else if(b > a && b > c){
+        cout<<b<<endl;
+    }
+    else{
+        cout<<c<<endl;
+    }
+}
+
+
+
+
+Problem 02 :-
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    int a;                          
+    cin>>a;                         
+    if(a >= 90 && a<=100){
+        cout<<"Grade: A"<<endl;
+    }
+    else if(a >= 80 && a<= 89){
+        cout<<"Grade: B"<<endl;
+    }
+    else if(a >= 70 && a <= 79){
+        cout<<"Grade: C"<<endl;
+    }
+    else if(a >= 60 && a <= 69){
+        cout<<"Grade: D"<<endl;
+    }
+    else if(a == 0 && a <= 59){
+        cout<<"Grade: F"<<endl;
+    }
+    else{
+        cout<<"Enter Valid input!"<<endl;
+    }
+
+
+
+Problem 03 :-
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int m;
+    cout<<"Enter a number: "<<endl;
+    cin>>m;
+    
+    if(m == 1){
+        cout<<"The month is: January"<<endl;
+    }
+    else if(m == 2){
+        cout<<"The month is: Febraury"<<endl;
+    }
+    else if(m == 3){
+        cout<<"The month is: March"<<endl;
+    }
+    else if(m == 4){
+        cout<<"The month is: April"<<endl;
+    }
+    else if(m == 5){
+        cout<<"The month is: May"<<endl;
+    }
+    else if(m == 6){
+        cout<<"The month is: June"<<endl;
+    }
+    else if(m == 7){
+        cout<<"The month is: July"<<endl;
+    }
+    else if(m == 8){
+        cout<<"The month is: August"<<endl;
+    }
+    else if(m == 9){
+        cout<<"The month is: September"<<endl;
+    }
+    else if(m == 10){
+        cout<<"The month is: October"<<endl;
+    }
+    else if(m == 11){
+        cout<<"The month is: November"<<endl;
+    }
+    else if(m == 12){
+        cout<<"The month is: December"<<endl;
+    }
+    else{
+        cout<<"No month exist"<<endl;
+    }
+}
+
+                                    
+}
