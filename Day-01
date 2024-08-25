@@ -35,3 +35,16 @@ int main()
     float avg = (float)(g1+g2+g3+g4+g5)/5;
     cout<<"AVERAGE: "<<avg;
 }
+
+
+Problem 03:-
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num;
+    cin>>num;
+    
+    int sq = num*num;
+    cout<<"Square of num: "<<sq<<endl;
+}
