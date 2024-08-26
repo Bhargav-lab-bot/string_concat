@@ -1,0 +1,93 @@
+Problem 01:-
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int m;
+    cin>>m;
+    
+    cout<<"Addition: "<<n+m<<endl;
+    if(n>m){
+    cout<<"Subraction: "<<n-m<<endl;
+    }
+    else{
+    cout<<"Subraction: "<<m-n<<endl;
+    }
+    cout<<"Multiplication: "<<n*m<<endl;
+    
+    if(m != 0){
+        cout<<"Division: "<< static_cast<double> (n)/m<<endl;
+        cout<<"Modulus: "<<n%m<<endl;
+    }
+    else{
+        cout<<"Division is not possible"<<endl;
+        cout<<"modulus is not possible"<<endl;
+        
+    }
+    return 0;
+}
+
+
+
+
+
+
+Problem 02:-
+
+
+#include <iostream>
+using namespace std;
+
+class Complex {
+private:
+    int real;
+    int imag;
+
+public:
+
+    Complex(int r = 0, int i = 0) : real(r), imag(i) {}
+
+    Complex operator+(const Complex& other) {
+        return Complex(real + other.real, imag + other.imag);
+    }
+
+
+    Complex operator-(const Complex& other) {
+        return Complex(real - other.real, imag - other.imag);
+    }
+
+
+    void display() {
+        if (imag >= 0)
+            cout << real << " + " << imag << "i" << endl;
+        else
+            cout << real << " - " << -imag << "i" << endl;
+    }
+};
+
+int main() {
+
+    Complex c1(3, 4);
+    Complex c2(1, 2);
+
+
+    Complex sum = c1 + c2;
+
+    Complex diff = c1 - c2;
+
+    cout << "Complex Number 1: ";
+    c1.display();
+
+    cout << "Complex Number 2: ";
+    c2.display();
+
+    cout << "Sum: ";
+    sum.display();
+
+    cout << "Difference: ";
+    diff.display();
+
+    return 0;
+}
