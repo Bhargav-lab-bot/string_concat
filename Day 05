@@ -1,0 +1,65 @@
+Problem 01:-
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    
+    if(n % 2 == 0){
+        cout<<"Even";
+    }
+    else{
+        cout<<"Odd";
+    }
+
+    return 0;
+}
+
+
+Problem 02:-
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string word;
+    cin>>word;
+    int size = word.size();
+    string rev;
+    for(int i = size-1; i >= 0;i--){
+        rev += word[i];
+    }
+    cout<<rev<<endl;
+}
+
+
+
+
+Problem 03:-
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string str;
+    cin>>str;
+    
+    int present_vow = 0;
+    int present_con = 0;
+    int size = str.size();
+     for (char ch : str) {
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            present_vow++;
+        } else if (isalpha(ch)) {  
+            present_con++;
+        }
+    }
+    
+    cout<<"Number of vowels: "<<present_vow<<endl;
+    cout<<"Number of consonants: "<<present_con<<endl;
+    
+    return 0;
+}
