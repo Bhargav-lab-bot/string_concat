@@ -1,0 +1,93 @@
+Problem 01:-
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    
+    int arr[n];
+    for(int i = 0; i < n;i++){
+        cin>>arr[i];
+    }
+    
+    int sum = 0;
+    for(int i = 0; i < n;i++)
+    {
+        sum+=arr[i];
+    }
+    cout<<"The sum of the elements in array: "<<sum<<endl;
+
+    return 0;
+}
+
+
+
+Problem 02:-
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    
+    int arr[n];
+    for(int i = 0; i < n;i++){
+        cin>>arr[i];
+    }
+    
+    int sum_odd = 0;
+    int sum_even = 0;
+    
+    for(int i = 0; i < n;i++){
+        if(arr[i] % 2 == 0){
+            sum_even += arr[i];
+        }
+        else{
+            sum_odd += arr[i];
+        }
+    }
+    cout<<"Sum of the even numbers in the given array: "<<sum_even<<endl;
+    cout<<"Sum of the odd numbers in the given array: "<<sum_odd<<endl;
+}
+
+
+Problem 03:-
+
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout<<"Enter the size of array: ";
+    cin>>n;
+    
+    int arr[n];
+    cout<<"Enter the elements in the array: ";
+    for(int i = 0; i < n;i++){
+        cin>>arr[i];
+    }
+    
+    int count_odd = 0;
+    int count_even = 0;
+    
+    for(int i = 0;i < n;i++){
+        if(arr[i] % 2 == 0){
+            count_even++;
+        }
+        else{
+            count_odd++;
+        }
+    }
+    
+    cout<<"Number of odd numbers: "<<count_odd<<endl;
+    cout<<"Number of even numbers: "<<count_even<<endl;
+    
+    
+    return 0;
+}
