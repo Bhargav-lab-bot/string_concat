@@ -1,0 +1,52 @@
+Problem 01 :-
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string word;
+    getline(cin,word);
+    
+    int size = word.length();
+    
+    cout<<size;
+
+    return 0;
+}
+
+
+Problem 02 :-
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string word;
+    getline(cin,word);
+    
+    char letter;
+    cin>>letter;
+    
+    int size = word.length();
+    
+    int count = std::count(word.begin(),word.end(),letter);
+    cout<<count;
+}
+
+ Problem 03 :-
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string word1;
+    getline(cin,word1);
+    
+    string word2;
+    getline(cin,word2);
+    
+    string concat = word1+word2;
+    
+    cout<<concat;
+}
